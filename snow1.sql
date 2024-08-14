@@ -2,7 +2,7 @@
 -- ER/Studio Data Architect SQL Code Generation
 -- Project :      DATA MODEL
 --
--- Date Created : Wednesday, August 14, 2024 15:58:33
+-- Date Created : Wednesday, August 14, 2024 16:52:17
 -- Target DBMS : Snowflake
 --
 
@@ -27,7 +27,7 @@ CREATE HYBRID TABLE Entity2(
     id3    CHAR(10),
     id4    CHAR(10),
     id1    CHAR(10)    NOT NULL,
-    PRIMARY KEY (id1) NOT DEFERRABLE , 
+    PRIMARY KEY (id1) , 
     FOREIGN KEY (id1)
     REFERENCES Entity1(id1)
 )
