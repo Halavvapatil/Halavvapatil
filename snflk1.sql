@@ -2,7 +2,7 @@
 -- ER/Studio Data Architect SQL Code Generation
 -- Project :      PKMODEL.dm1
 --
--- Date Created : Wednesday, August 14, 2024 15:24:58
+-- Date Created : Wednesday, August 14, 2024 15:27:20
 -- Target DBMS : Snowflake
 --
 
@@ -27,7 +27,7 @@ CREATE TABLE TESTER12(
     COL1    CHAR(10),
     col2    VARCHAR(10)    NOT NULL,
     col3    VARCHAR(10)    NOT NULL,
-    PRIMARY KEY (col2) NOT DEFERRABLE 
+    PRIMARY KEY (col2) 
 )
 ;
 
@@ -42,10 +42,7 @@ CREATE TABLE TABLE46(
     col5TES    VARCHAR(10)    NOT NULL,
     col6       VARCHAR(10)    NOT NULL,
     col2       VARCHAR(10)    NOT NULL,
-    PRIMARY KEY (col2) NOT DEFERRABLE , 
-    FOREIGN KEY (col2)
-    REFERENCES TESTER12(col2),
-
+    PRIMARY KEY (col2) NOT DEFERRABLE 
 )
 ;
 
